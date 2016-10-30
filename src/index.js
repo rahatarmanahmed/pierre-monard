@@ -36,8 +36,8 @@ const chapter9 = [
   `Con esto que dijo, hizo que todos se acomodasen y le prestasen un grande silencio; y él, viendo que ya callaban y esperaban lo que decir quisiese, con voz agradable y reposada, comenzó a decir desta manera:`
 ]
 
-var Title = ({text}) => <h1 className='f2 lh-title mt5 mb2 ttu tracked-mega'><Text text={text}/></h1>
-var Subtitle = ({text}) => <h2 className='f3 lh-title mt0 mb4 small-caps'><Text text={text}/></h2>
+var Title = ({text}) => <h1 className='f2 lh-title pt3 pb2 ma0 ttu tracked-mega'><Text text={text}/></h1>
+var Subtitle = ({text}) => <h2 className='f3 lh-title pt0 pb4 small-caps'><Text text={text}/></h2>
 var Paragraph = ({text}) => <p className='f4 lh-copy measure hyphenate'><Text text={text}/></p>
 var Verse = ({text}) => <blockquote className='pa3 f4 lh-copy measure i'>{intersperse(text.split('\n').map((text, i) => <Text text={text} key={i}/>), <br/>)}</blockquote>
 

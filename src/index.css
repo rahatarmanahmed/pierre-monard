@@ -10,3 +10,9 @@
    -moz-hyphens: auto;
         hyphens: auto;
 }
+
+@media screen and (min-width: 40em) {
+    .w-50-nm {
+        width: 50%;
+    }
+}
