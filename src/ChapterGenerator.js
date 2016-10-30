@@ -25,7 +25,11 @@ class ChapterGenerator extends Component {
         chapter[index][subIndex] = text
         return chapter
       }, this.state.chapter)
-      .subscribe(chapter => this.setState({ chapter }))
+      .subscribe(
+        chapter => this.setState({ chapter }),
+        null,
+        _ => this.setState({})
+      )
   }
 
   componentWillUnmount () {
