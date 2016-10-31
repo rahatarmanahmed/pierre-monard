@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Rx from 'rx'
+import Rx from 'rxjs'
 import Solver from 'genetic-phrase-solver'
 import Chapter from './Chapter'
 
@@ -17,7 +17,7 @@ class ChapterGenerator extends Component {
       .concatMap((paragraph, index) =>
         Rx.Observable.from(paragraph)
         .concatMap((line, subIndex) =>
-          Rx.Observable.from(Solver(line), null, null, Rx.Scheduler.async)
+          Rx.Observable.from(Solver(line), Rx.Scheduler.async)
           .map(text => ({ text, index, subIndex }))
         )
       )
