@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://rahatarmanahmed.github.io/pierre-monard",
   "devDependencies": {
-    "gh-pages": "^0.11.0",
-    "react-scripts": "0.7.0"
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.7"
   },
   "dependencies": {
     "genetic-phrase-solver": "^1.0.0",
